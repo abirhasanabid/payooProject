@@ -55,6 +55,11 @@ document.getElementById('first-cast-out-btn').addEventListener('click',function(
 
 // querySelector and getElementsByClassName kaj korbe na kno?
 
-document.querySelector('.back-btn').addEventListener('click',function(){
+document.querySelectorAll('.back-btn')[0].addEventListener('click',function(e){
+    window.location.href ='./index.html';
+    console.log('one')
+})
+document.querySelectorAll('.back-btn')[1].addEventListener('click',function(e){
     window.location.href ='./index.html'
+    console.log('two')
 })

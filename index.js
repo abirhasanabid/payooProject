@@ -17,11 +17,12 @@ document.querySelector('#login-btn').addEventListener('click',function(e){
     const phoneNumber = document.querySelector('#mobile-number').value;
     const inputPin = document.querySelector('#pin').value;
 
-    if(phoneNumber==='5'&& inputPin ==='1234'){
+    if(phoneNumber==='01311352752'&& inputPin ==='1234'){
         console.log('You are logged in');
+        window.location.href = './homePage.html'
     }else{
-        alert('Wrong number and password');
+         alert('Wrong number and password');
     }
 
-    window.location.href = './homePage.html'
+    
 })
