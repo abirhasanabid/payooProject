@@ -12,7 +12,7 @@ document.getElementById('add-money').addEventListener('click', function (e) {
         document.getElementById('main-balance').innerText = newBalance;
 
     } else {
-        alert('Failed to add money!Please try again')
+        alert('Failed to add money!Please try again');
     }
 
 })
@@ -48,4 +48,13 @@ document.querySelector('#cash-out-money-btn').addEventListener('click', function
 document.getElementById('first-cast-out-btn').addEventListener('click',function(){
     const cashOutMoneyClickDiv = document.getElementById('cash-out-money-click-div').classList.remove('hidden');
     const addMoneyClickDiv = document.getElementById('add-money-click-div').classList.add('hidden');
+})
+
+
+// back-btn
+
+// querySelector and getElementsByClassName kaj korbe na kno?
+
+document.querySelector('.back-btn').addEventListener('click',function(){
+    window.location.href ='./index.html'
 })
